@@ -114,7 +114,33 @@ These measures support business analysis by helping answer questions such as:
 
 **Technical note:** All measures are dynamic. They respond to report filters and slicers, allowing financial performance to be analysed by product, country, segment, discount band, and time period.
 
+# KPI:
+Business story: Corporate financial performance
 
+1. What happened?
+
+The company generated $127.93M in gross sales and provided $9.20M in discounts, resulting in $118.73M in net revenue.
+
+2. What does it mean?
+
+Discounts represent approximately 7.19% of gross sales. The company retained approximately 92.81% of gross sales as net revenue.
+
+3. Where did the money go?
+
+The company recorded $101.83M in COGS, leaving approximately $16.89M in profit.
+
+4. How profitable is the company?
+
+Its profit margin is approximately 14.23%. For every $100 in net revenue, approximately $14.23 remains as profit.
+
+5. What should management investigate? ----- Data Analyst's Task
+- Which products have the highest profit margins?
+- Which countries generate the most profit?
+- Are discounts reducing profitability?
+- Which customer segments have the highest COGS ratios?
+- Are some products generating revenue but losing money?
+
+Dimensions: Country, Product, Segment, Discount Band, Year, Month
 
 
 
