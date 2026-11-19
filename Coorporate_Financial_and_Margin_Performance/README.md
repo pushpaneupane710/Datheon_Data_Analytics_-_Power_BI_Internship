@@ -17,7 +17,7 @@ I investigated those 53 records.
 **Important finding:** All 53 records have Discounts = 0.
 
 **This means the missing category appears to represent transactions without discounts.**
-
+---
 **ISSUE 2** Negative profit.
 
 I found 58 records where profit is negative.
@@ -32,8 +32,8 @@ We don't delete these records. They are particularly important for profitability
 
 We should investigate which products, countries and segments generate these losses (negative profit).
 
-
-**Issue 3:** Financial calculation validation
+---
+**ISSUE 3:** Financial calculation validation
 
 This is one of the most important checks.
 
@@ -47,3 +47,4 @@ Profit = Sales − COGS	-> 700 passed
 
 All 3 validations passed
 This is good news. Our core financial calculations are internally consistent.  
+---
