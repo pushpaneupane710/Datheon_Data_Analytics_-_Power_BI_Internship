@@ -59,11 +59,60 @@ Power Query is where we prepare and clean data before loading it into the Power 
 1. Replaced None-> No Discount in Discount Band column.
    
 2. Original column name has an unwanted leading space: ''' Sales'''
+   
    Rename it to '''Sales''' (without the space)
+   
    Why? Clean column names make DAX formulas easier to write and reduce errors when building your financial measures.
 
+---
 
+## DAX Measures in PowerBI
 
+I created the following DAX measures in Power BI to analyse financial performance, revenue, profitability, discounts, costs, and sales volume.
+
+### 1. Revenue and Financial Performance
+
+| Measure | DAX Formula | Purpose |
+|---|---|---|
+| **Total Revenue** | `Total Revenue = SUM(financial[Sales])` | Calculates total net revenue after discounts. |
+| **Total Gross Sales** | `Total Gross Sales = SUM(financial[Gross Sales])` | Calculates total sales before discounts. |
+| **Total Profit** | `Total Profit = SUM(financial[Profit])` | Calculates the total profit generated. |
+| **Total Discounts** | `Total Discounts = SUM(financial[Discounts])` | Calculates the total discount amount given to customers. |
+| **Total COGS** | `Total COGS = SUM(financial[COGS])` | Calculates the total Cost of Goods Sold. |
+
+### 2. Profitability and Cost Analysis
+
+| Measure | DAX Formula | Purpose |
+|---|---|---|
+| **Profit Margin %** | `Profit Margin % = DIVIDE([Total Profit], [Total Revenue], 0)` | Measures the percentage of net revenue retained as profit. |
+| **Discount Rate %** | `Discount Rate % = DIVIDE([Total Discounts], [Total Gross Sales], 0)` | Measures the percentage of gross sales given away as discounts. |
+| **COGS Ratio %** | `COGS Ratio % = DIVIDE([Total COGS], [Total Revenue], 0)` | Measures the proportion of net revenue spent on product costs. |
+
+### 3. Sales Volume and Average Performance
+
+| Measure | DAX Formula | Purpose |
+|---|---|---|
+| **Total Units Sold** | `Total Units Sold = SUM(financial[Units Sold])` | Calculates the total number of units sold. |
+| **Average Selling Price** | `Average Selling Price = AVERAGE(financial[Sale Price])` | Calculates the average selling price across sales records. |
+| **Average Discount** | `Average Discount = AVERAGE(financial[Discounts])` | Calculates the average discount amount per sales record. |
+| **Average Profit** | `Average Profit = AVERAGE(financial[Profit])` | Calculates the average profit per sales record. |
+| **Total Transactions** | `Total Transactions = COUNTROWS(financial)` | Counts the total number of sales records. |
+
+### Business Value
+
+These measures support business analysis by helping answer questions such as:
+
+- How much revenue did the company generate?
+- How much profit did the company make?
+- What percentage of revenue was retained as profit?
+- How much did discounts reduce gross sales?
+- How much did the company spend on production costs?
+- Which products and countries generated the highest revenue?
+- Which segments performed best?
+- How many units were sold?
+- What was the average profit per sales record?
+
+**Technical note:** All measures are dynamic. They respond to report filters and slicers, allowing financial performance to be analysed by product, country, segment, discount band, and time period.
 
 
 
