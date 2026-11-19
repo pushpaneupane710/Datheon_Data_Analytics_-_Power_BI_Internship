@@ -17,6 +17,7 @@ I investigated those 53 records.
 **Important finding:** All 53 records have Discounts = 0.
 
 **This means the missing category appears to represent transactions without discounts.**
+
 ---
 **ISSUE 2** Negative profit.
 
@@ -47,4 +48,5 @@ Profit = Sales − COGS	-> 700 passed
 
 All 3 validations passed
 This is good news. Our core financial calculations are internally consistent.  
+
 ---
