@@ -2,7 +2,7 @@
 
 Model corporate financial statement telemetry. Construct variance analyses comparing actual sales against budget targets across geographic segments, product lines, and manufacturing cost centers.
 
-## Dataset audit- What is wrong?
+# Dataset audit- What is wrong?
 
 **ISSUE 1** Missing values.
 
@@ -66,7 +66,7 @@ Power Query is where we prepare and clean data before loading it into the Power 
 
 ---
 
-## DAX Measures in PowerBI
+# DAX Measures in PowerBI
 
 I created the following DAX measures in Power BI to analyse financial performance, revenue, profitability, discounts, costs, and sales volume.
 
