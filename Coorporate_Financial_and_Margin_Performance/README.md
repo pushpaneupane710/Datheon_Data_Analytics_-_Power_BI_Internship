@@ -50,3 +50,37 @@ All 3 validations passed
 This is good news. Our core financial calculations are internally consistent.  
 
 ---
+
+# Data Preparation in powerBI before analysing, visualizing and reporting
+
+**What are we doing in Power Query?**
+Power Query is where we prepare and clean data before loading it into the Power BI data model.
+
+1. Replaced None-> No Discount in Discount Band column.
+   
+2. Original column name has an unwanted leading space: ''' Sales'''
+   Rename it to '''Sales''' (without the space)
+   Why? Clean column names make DAX formulas easier to write and reduce errors when building your financial measures.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
