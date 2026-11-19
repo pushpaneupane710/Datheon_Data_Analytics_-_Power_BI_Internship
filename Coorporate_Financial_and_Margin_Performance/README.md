@@ -84,19 +84,19 @@ I created the following DAX measures in Power BI to analyse financial performanc
 
 | Measure | DAX Formula | Purpose |
 |---|---|---|
-| **Profit Margin %** | `Profit Margin % = DIVIDE([Total Profit], [Total Revenue], 0)` | Measures the percentage of net revenue retained as profit. |
-| **Discount Rate %** | `Discount Rate % = DIVIDE([Total Discounts], [Total Gross Sales], 0)` | Measures the percentage of gross sales given away as discounts. |
-| **COGS Ratio %** | `COGS Ratio % = DIVIDE([Total COGS], [Total Revenue], 0)` | Measures the proportion of net revenue spent on product costs. |
+| **Profit Margin %** | `Profit Margin % = DIVIDE([Total Profit], [Total Revenue], 0)` | Revenue tells us how much the company earns. Profit Margin tells us how much profit it keeps from each unit of revenue. |
+| **Discount Rate %** | `Discount Rate % = DIVIDE([Total Discounts], [Total Gross Sales], 0)` | This tells us what percentage of gross sales was given away as discounts. |
+| **COGS Ratio %** | `COGS Ratio % = DIVIDE([Total COGS], [Total Revenue], 0)` | This tells us how much of the company's net revenue is spent on the cost of goods sold. |
 
 ### 3. Sales Volume and Average Performance
 
-| Measure | DAX Formula | Purpose |
+| Measure | DAX Formula | WHY? |
 |---|---|---|
-| **Total Units Sold** | `Total Units Sold = SUM(financial[Units Sold])` | Calculates the total number of units sold. |
-| **Average Selling Price** | `Average Selling Price = AVERAGE(financial[Sale Price])` | Calculates the average selling price across sales records. |
-| **Average Discount** | `Average Discount = AVERAGE(financial[Discounts])` | Calculates the average discount amount per sales record. |
-| **Average Profit** | `Average Profit = AVERAGE(financial[Profit])` | Calculates the average profit per sales record. |
-| **Total Transactions** | `Total Transactions = COUNTROWS(financial)` | Counts the total number of sales records. |
+| **Total Units Sold** | `Total Units Sold = SUM(financial[Units Sold])` | This measure helps us understand product sales volume and compare demand across products, countries, and segments. |
+| **Average Selling Price** | `Average Selling Price = AVERAGE(financial[Sale Price])` | This measure helps us compare the average selling price across different products, countries, and customer segments. |
+| **Average Discount** | `Average Discount = AVERAGE(financial[Discounts])` | This helps us understand the average discount given per sales record. |
+| **Average Profit** | `Average Profit = AVERAGE(financial[Profit])` | This shows the average profit per record and helps identify whether individual sales records are profitable. |
+| **Total Transactions** | `Total Transactions = COUNTROWS(financial)` | This measure counts the number of sales records and will help us calculate average revenue per record. |
 
 ### Business Value
 
