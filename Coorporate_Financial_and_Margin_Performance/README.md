@@ -10,6 +10,12 @@ Model corporate financial statement telemetry. Construct variance analyses compa
 4. Build a waterfall chart showing revenue erosion through discounts and manufacturing expenses.
 5. Include interactive scenario forecasting sliders.
 
+# Tools:
+1. Power BI Desktop
+2. DAX
+3. Financial Modeling
+
+
 # Dataset audit- What is wrong?
 
 **ISSUE 1** Missing values.
