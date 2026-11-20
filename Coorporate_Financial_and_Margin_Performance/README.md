@@ -162,6 +162,13 @@ Dimensions: Country, Product, Segment, Discount Band, Year, Month
 
 
 
+<img width="2778" height="1618" alt="image" src="https://github.com/user-attachments/assets/557b5fd9-03ca-4e23-aa27-5eca3c19aff8" />
+
+
+
+
+
+
 
 
 
