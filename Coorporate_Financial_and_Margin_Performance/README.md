@@ -158,6 +158,11 @@ Dimensions: Country, Product, Segment, Discount Band, Year, Month
 
 # Corporate Financial & Margin Performance Dashboard
 
+<img width="1978" height="1292" alt="image" src="https://github.com/user-attachments/assets/ced12cf8-248f-42d5-b8bf-b9b094a4174d" />
+
+
+
+
 
 
 
