@@ -2,6 +2,14 @@
 
 Model corporate financial statement telemetry. Construct variance analyses comparing actual sales against budget targets across geographic segments, product lines, and manufacturing cost centers.
 
+# Technical Approach
+
+1. Connect Power BI to the Microsoft Financial Sample dataset.
+2. Model income statement hierarchies (Gross Sales -> Discounts -> Net Sales -> COGS -> Profit).
+3. Create DAX measures for [Gross Profit %], [COGS Ratio], and [Segment Margin].
+4. Build a waterfall chart showing revenue erosion through discounts and manufacturing expenses.
+5. Include interactive scenario forecasting sliders.
+
 # Dataset audit- What is wrong?
 
 **ISSUE 1** Missing values.
